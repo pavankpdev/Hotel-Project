@@ -1,0 +1,117 @@
+
+ /* Default styles */
+* {
+  box-sizing: border-box;
+  list-style: none;
+} 
+
+body { 
+  background-color: #fff;
+  font-family: 'Courier New', Courier, monospace; 
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: #3498DB;
+  font-size: 1rem;
+  padding-right: 3.5px;
+} 
+.container {
+  position: fixed; 
+  z-index: 1000;
+}
+.logo {
+   background-color: #3498DB;
+   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+   font-size: 1.2rem;
+   color: #fff;
+   padding: 0.5rem;
+   padding-left: 0.2rem;
+   margin: -7.8px -8px 0 -8px;
+}
+.navbar img {
+  width: 30px;
+  float: right;
+  margin: -9px;
+  margin-top: -35px;
+}
+.nav-items {
+  background-color: white;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  font-weight: bold; 
+  padding: 0.5rem;
+  margin: 0.8px -8px 0 -8px;
+}
+a:hover {
+  color: #81bfe9;
+  cursor: pointer;
+}
+.hero-container img{
+  width: 95%;
+  height: 40%;
+  border: 10px solid #fff;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  margin: 100px -12px -5px 5px;
+}
+.greeting-container {
+  background-color: #3498DB;
+  color: #fff;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 50px 0 -10px 0;
+}
+.greeting-container h1 {
+  letter-spacing: 0.3rem;
+  font-size: 1.9rem;
+  font-family: Dancing Script;
+  text-transform: uppercase;
+}
+h1 span {
+  color: #205579;
+}
+.greeting-description p {
+  font-size: 0.9rem;
+  font-family:  'Courier New', Courier, monospace;
+}
+/* media query */
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 1024px) {
+  
+}
+
+@media (min-width: 1380px) {
+  
+}

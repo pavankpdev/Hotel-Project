@@ -2,7 +2,6 @@
  /* Default styles */
 * {
   box-sizing: border-box;
-  list-style: none;
 } 
 
 body { 
@@ -13,6 +12,7 @@ body {
 
 h1 {
   font-size: 2.2em;
+  text-decoration: underline;
 }
 
 h2 {
@@ -70,6 +70,7 @@ a {
 }
 a:hover {
   color: #81bfe9;
+  text-decoration: underline;
   cursor: pointer;
 }
 /* hero-img */
@@ -79,7 +80,7 @@ a:hover {
   border: 10px solid #fff;
   border-radius: 1rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  margin: 40px -12px 25px 5px;
+  margin: 110px -12px 25px 5px;
 }
 /* Welcome/greeting */
 .greeting-container {
@@ -89,22 +90,21 @@ a:hover {
   border-radius: 1rem;
   text-align: center;
   margin: 50px 10px -10px 10px;
-  font-family: Dancing Script;
   padding: 1rem;
 }
 .greeting-container h1 {
   letter-spacing: 0.3rem;
-  font-size: 2rem;
-  font-family: Dancing Script;
+  font-size: 2.4rem;
   text-transform: uppercase;
 }
 h1 span {
   color: #205579;
 }
 .greeting-description p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.1rem;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
+  font-weight: bold;
   padding: 0 2px 0 2px;
 }
 /* About */
@@ -118,28 +118,389 @@ h1 span {
   padding: 1rem;
 }
 .about-container h1 {
-  font-size: 2.2rem;
-  letter-spacing: 0.1rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
 }
 .about-container p {
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 1.5rem;
 }
-
+/* Services */
+.service-container {
+  background-color: #3498DB;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 1.2rem;
+  text-align: center;
+  margin: 1rem 0.6rem;
+  margin-top: 8rem;
+  padding: 1rem;
+}
+.service-container h1{
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.service-container span {
+  text-decoration: underline;
+}
+ul li {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  text-align: left;
+}
+/* Menu */
+.menu-container {
+  background-color: #fff;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  color: #3498DB;
+  border-radius: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin: 1rem 0.6rem;
+  margin-top: 5rem;
+  padding: 1rem;
+  height: 90vh;
+}
+.menu-container h1 {
+  text-align: center;
+}
+.menu-container img {
+  float: right;
+  margin: -4.5rem 3rem 0 -6rem;
+ }
+/* Contact */
+.contact-container {
+  background-color: #3498DB;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 1.2rem;
+  text-align: center;
+  margin: 5rem 0.6rem;
+  padding: 1rem;
+  padding-bottom: 2.5rem;
+}
+.contact-container h1{
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-align: left; 
+  margin-left: 5px;
+}
+.contact-container p {
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: start;
+  line-height: 1.6rem;
+  margin-left: 5px;
+}
+.contact-link {
+  margin: 0.5rem;
+  text-align: left;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+}
+.contact-container i {
+  line-height: 3rem;
+}
+.contact-container span {
+  margin: -8px -4px 0 30px;
+  line-height: 2rem;
+}
 /* media query */
 @media (min-width: 576px) {
+  .nav-items {
+    width: 125%;
+    padding-left: 2.8rem;
+  }
+  .nav-items a {
+    font-size: 1.4rem;
+  }  
+  .navbar img {
+     width: 42px;
+     margin-right: -2.8rem;
+     margin-top: -2.6rem;
+  }
+  .logo {
+    width: 125%;
+    font-size: 1.6rem;
+    padding-left: 3.5rem;
+  }
 
+  .hero-container img{
+    margin: 135px 12px 25px 12px;
+  }
+
+  .greeting-container {
+    margin-right: 1rem;
+  }
+  .greeting-container h1 {
+    font-size: 2.7rem;
+    margin-top: 1rem;
+  }
+  .greeting-container p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+
+  .about-container p {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  } 
+  .about-container {
+    margin-right: 1rem;
+  }
+  
+  .service-container {
+    margin-right: 1rem;
+  }
+  ul li {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+  }
+   
+  .menu-container {
+    margin-right: 1rem;
+    border-radius: 2rem;
+  }
+  .menu-container h1 {
+    font-size: 2.5rem;
+   
+  }
+  .menu-container img {
+    height: 60vh;
+    width: 47vh;
+    margin: 1.5rem 7rem;
+  }
+  .contact-container {
+    margin-right: 1rem;
+    margin-top: 90px;
+  }
+  .contact-container p {
+    font-size: 1.3rem;
+  }
+  .contact-container span {
+     font-size: 1.4rem;
+  }
 }
 
 @media (min-width: 768px) {
+  .navbar img {
+    margin-right: 1.5rem;
+    width: 5.5%;
+  }
+  .logo {
+    font-size: 1.8rem;
+    padding-left: 7.5rem;
+  }
+  .nav-items {
+    padding-left: 6.9rem;
+  }
+  .nav-items a {
+    font-size: 1.5rem;
+  }
+  a {
+    margin-right: 1rem;
+  }
+  
+  .hero-container img {
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+  }
+  .greeting-container {
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+  }
+  .greeting-container p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .about-container {
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+  }
+  .about-container p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .service-container {
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+  }
+  ul li {
+    line-height: 2.5rem;
+  }
+
+  .menu-container {
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+  }
+  .menu-container img {
+    margin-right: 14rem;
+  }
+
+  .contact-container {
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+  }
+  .contact-container span {
+    margin-left: 2.5rem;
+  }
+  
   
 }
 
 @media (min-width: 1024px) {
-  
+  .logo {
+    padding-left: 10rem;
+    font-size: 2.5rem;
+    height: 9vh;
+    padding-top: 1rem;
+   }
+   .navbar img {
+    margin-top: -3.9rem;
+ }
+   .nav-items {
+     height: 7vh;
+     padding-top: 1rem;
+   }
+   .nav-items a {
+     font-size: 2rem;
+     margin-left: 1.4rem;
+   }
+   
+   .navbar img {
+     margin-right: -4rem;
+     padding-top: -5rem;
+     width: 6%;
+   }
+   
+   .greeting-container h1 {
+     font-size: 3.9rem;
+   }
+   .greeting-description p {
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+  }
+  .hero-container img {
+    margin-top: 13rem;
+  }
+.about-container h1 {
+    font-size: 3.5rem;
+  }
+ .about-container p {
+   font-size: 1.8rem;
+   line-height: 2.9rem;
+ }
+
+ .service-container h1 {
+  font-size: 3.3rem;
+}
+ul li {
+ font-size: 1.8rem;
+ line-height: 3.4rem;
+}
+
+.menu-container h1 {
+  font-size: 3.5rem;
+}
+.menu-container img {
+  width: 10%;
+  margin-right: 20rem;
+
+}
+.menu-container p {
+ font-size: 1.8rem;
+ line-height: 2.9rem;
+}
+
+.contact-container h1 {
+  font-size: 3.5rem;
+}
+.contact-container p{
+ font-size: 2rem;
+ line-height: 3.6rem;
+}
+.contact-container span{
+  font-size: 2rem;
+  line-height: 3.6rem;
+ }
 }
 
 @media (min-width: 1380px) {
-  
+  .navbar {
+    width: 119.3%;
+  }
+ 
+  .logo {
+    padding-left: 20rem;
+  }
+  .navbar img {
+    width: 4%;
+    margin-right: 14.7rem;
+  }
+
+  .nav-items {
+    padding-left: 16rem;
+  }
+
+  .hero-container img {
+    width: 135vh;
+    height: 50vh;
+  }
+  .hero-container {
+    margin: 0 5rem;
+  }
+
+  .greeting-container {
+    margin: 2.5rem 2.5rem;
+  }
+
+  .about-container {
+    margin: 4.8rem 2.5rem;
+    width: 70vh;
+    border-radius: 2.3rem;
+  }
+  .about-container p {
+    margin: 3.5rem;
+  }
+
+  .service-container {
+    margin: -48rem 2.5rem;
+    width: 70vh;
+    float: right;
+   }
+
+   .menu-container {
+     width: 70vh;
+     margin: 2.5rem 2.5rem;
+     height: 85vh;
+     border-radius: 2.4rem;
+   }
+   .menu-container .img-menu{
+     margin-top: -6rem;
+     margin-right: 9rem;
+   }
+
+   .contact-container {
+     width: 70vh;
+     margin: -46rem 2.5rem;
+     float: right;
+   }
+   .contact-container p {
+     font-size: 1.6rem;
+    line-height: 2.2rem;
+   }
+   .contact-container span {
+     font-size: 1.7rem;
+   }
 }
